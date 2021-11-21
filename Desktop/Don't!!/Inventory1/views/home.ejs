@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Music Library</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 class="c1">Music Library Inventory Management System</h1>
+
+        <h3><a href="/create" class="c2">Add New Record</a></h3>
+        <h3><a href="/updaterecord" class="c2">Update Record</a>
+        </h3>
+        <h3><a href="/deleterecord" class="c2">Delete Record</a></h3>
+
+        <h2>MusicBuzz!</h2>
+
+        <p>Music, art concerned with combining vocal or instrumental sounds for beauty of form or emotional expression, usually according to cultural standards of rhythm, melody, and, in most Western music, harmony. Both the simple folk song and the complex electronic composition belong to the same activity, music. Both are humanly engineered; both are conceptual and auditory, and these factors have been present in music of all styles and in all periods of history, throughout the world.</p>
+        <p>Music is an art that, in one guise or another, permeates every human society. Modern music is heard in a bewildering profusion of styles, many of them contemporary, others engendered in past eras. Music is a protean art; it lends itself easily to alliances with words, as in song, and with physical movement, as in dance. Throughout history, music has been an important adjunct to ritual and drama and has been credited with the capacity to reflect and influence human emotion. Popular culture has consistently exploited these possibilities, most conspicuously today by means of radio, film, television, musical theatre, and the Internet.</p>
+
+        <table class="center">
+            <tr>
+                <th>Artist ID</th>
+                <th>Artist Name</th>
+                <th>Genre</th>
+                <th>Number Of Songs</th>
+            </tr>
+
+            <% for(var i=0; i<data.length; i++) {%>
+            <tr>
+                <td><%= data[i].aid %></td>
+                <td><%= data[i].name %></td>
+                <td><%= data[i].genre %></td>
+                <td><%= data[i].nsongs %></td>
+            </tr>    
+            <% } %> 
+        </table>
+
+        <footer>
+            &Copyright 2021 MusicBuzz.
+        </footer>
+    </body>
+</html>

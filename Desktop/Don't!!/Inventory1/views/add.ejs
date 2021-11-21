@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Music Library</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h4 class="c1">Add a new Record</h4>
+
+        <form action="/AddData" method="POST">
+            <label for="aid">Artist Id:</label>
+            <input type="number" placeholder="Enter Artist ID" name="aid"><br>
+            
+            <label for="name">Artist Name:</label>
+            <input type="text" placeholder="Enter Artist Name" name="name"><br>
+
+            <label for="genre">Genre:</label>
+            <input type="text" placeholder="Enter Artist Genre" name="genre"><br>
+
+            <label for="ns">Number of Songs:</label>
+            <input type="number" placeholder="Enter Number of Sons" name="no_records"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <a href="/" class="c2">Home page</a>
+    </body>
+</html>
